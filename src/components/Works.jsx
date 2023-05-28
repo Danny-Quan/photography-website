@@ -7,12 +7,14 @@ function Works() {
   const [filtered, setFiltered] = useState(0);
   const [filteredData, setFilteredData] = useState([]);
 
+  const renderedData = imageData.slice(0, 9);
+
   useEffect(() => {
     if (filtered === 0) {
-      setFilteredData(imageData);
+      setFilteredData(renderedData);
       return;
     }
-    const myData = imageData.filter((image) => image.filterId === filtered);
+    const myData = renderedData.filter((image) => image.filterId === filtered);
     setFilteredData(myData);
   }, [filtered]);
 
@@ -27,38 +29,38 @@ function Works() {
             onClick={() => {
               setFiltered(0);
             }}
-            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full focus:bg-transparent focus:text-black border-2 border-black transition-all duration-300 mr-2"
+            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full hover:bg-transparent hover:text-black border-2 border-black transition-all duration-300 mr-2"
           >
             All
           </button>
           <button
             onClick={() => {
-              setFiltered(10);
-            }}
-            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full focus:bg-transparent focus:text-black border-2 border-black transition-all duration-300 mr-2"
-          >
-            FASHION
-          </button>
-          <button
-            onClick={() => {
               setFiltered(20);
             }}
-            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full focus:bg-transparent focus:text-black border-2 border-black transition-all duration-300 mr-2"
+            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full hover:bg-transparent hover:text-black border-2 border-black transition-all duration-300 mr-2"
           >
-            WEDDING
+            PORTRIAT
           </button>
           <button
             onClick={() => {
               setFiltered(30);
             }}
-            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full focus:bg-transparent focus:text-black border-2 border-black transition-all duration-300"
+            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full hover:bg-transparent hover:text-black border-2 border-black transition-all duration-300 mr-2"
           >
-            PERSONAL
+            WEDDING
+          </button>
+          <button
+            onClick={() => {
+              setFiltered(10);
+            }}
+            className="filter--btn text-white bg-black px-8 text-sm py-2 rounded-full hover:bg-transparent hover:text-black border-2 border-black transition-all duration-300"
+          >
+            LIFESTYLE
           </button>
         </div>
         <div className="gallery">
           {filteredData.map((image) => (
-            <div className="pics" key={image.id}>
+            <div className="pics"  key={image.id}>
               <ModalImage
                 small={image.source}
                 large={image.source}

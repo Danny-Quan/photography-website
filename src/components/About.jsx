@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function About() {
   return (
@@ -9,34 +13,34 @@ function About() {
           capturing memories worldwide
         </h2>
         <p className="about--header--after text-center mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia
-          similique, perspiciatis maiores in distinctio doloremque non?
-          Voluptate commodi enim animi sit, mollitia cumque numquam, et
-          explicabo ducimus esse amet. Voluptate commodi enim animi sit,
-          mollitia cumque numquam, et explicabo ducimus esse amet.
+          "Only Photography has been able to divide human life into series of
+          moments, each of them has a complete value of existence" &nbsp;{" "}
+          <strong>Eadweard Muybridge</strong>
         </p>
 
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 items-center gap-10 mt-20">
-          <img src="./../img/wallpaperflare.com_wallpaper-min.jpg" alt="" />
-          <div className="border-l-2 border-primary pl-5">
+          <img data-aos="fade-right" data-aos-duration="1000" src="./../img/emson_logo.jpeg" alt="about logo" />
+          <div data-aos="fade-left" data-aos-duration="1000" className="border-l-2 border-primary pl-5">
             <h3 className="styled--head font-bold text-4xl text-black capitalize mb-5">
-              wedding photographer
+              EmSon photography
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique excepturi totam adipisci officia dolorum itaque unde
-              recusandae, iste voluptates! Veritatis
+              My name is Emmanuel Forson, a professional Photographer based in
+              Massachusetts, where I specialize in wedding, portrait, Maternity,
+              Birthday and lifestyle photography ...
             </p>{" "}
             <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique excepturi totam adipisci officia dolorum itaque unde
-              recusandae, iste voluptates! Veritatis
+              what started as a hobby quick developed into a passion and
+              profession leading me to also become the founder of{" "}
+              <strong>EmSon Photography</strong>
             </p>
             <button className="mt-5">
               <Link
                 to={"/about"}
-                className={"spaced--text uppercase text-sm font-semibold text-primary"}
+                className={
+                  "spaced--text uppercase text-sm font-semibold text-primary"
+                }
               >
                 learn more about us &rarr;
               </Link>

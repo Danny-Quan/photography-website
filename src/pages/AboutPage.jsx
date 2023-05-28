@@ -4,52 +4,28 @@ function AboutPage() {
   return (
     <section className="mt-10">
       <div className="container">
-        <h2 className="text-center xl:text-2xl lg:text-2xl md:text-2xl text-xl font-bold uppercase mb-5 mt-10 text-black">
+        <div>
+          <img src="./../img/unnamed.jpg" alt="emson photography" />
+          <div>
+          <h2 className="xl:text-2xl lg:text-2xl md:text-2xl text-xl font-bold uppercase mb-5 mt-10 text-black">
           About us
         </h2>
-        <div>
-          {/* <img src="./../img/wallpaperflare.com_wallpaper (1).jpg" alt="" /> */}
-          <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, libero placeat! Omnis illo veniam mollitia numquam
-              voluptates cupiditate aut, recusandae vel quaerat natus ab culpa
-              maiores, voluptatibus similique ea eaque! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Architecto, libero placeat!
-              Omnis illo veniam mollitia numquam voluptates cupiditate aut,
-              recusandae vel quaerat natus ab culpa maiores, voluptatibus
-              similique ea eaque! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Architecto, libero placeat! Omnis illo veniam
-              mollitia numquam voluptates cupiditate aut, recusandae vel quaerat
-              natus ab culpa maiores, voluptatibus similique ea eaque! Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-              libero placeat! Omnis illo veniam mollitia numquam voluptates
-              cupiditate aut, recusandae vel quaerat natus ab culpa maiores,
-              voluptatibus similique ea eaque!
+              My name is Emmanuel Forson, a professional Photographer based in
+              Massachusetts, where I specialize in wedding, portrait, Maternity,
+              Birthday and lifestyle photography. what started as a hobby quick
+              developed into a passion and profession leading me to also become
+              the founder of <strong>EmSon Photography</strong>
+            </p>
+            <br />
+            <p>
+              <strong>
+                "Only Photography has been able to divide human life into series
+                of moments, each of them has a complete value of existence"
+                Eadweard Muybridge
+              </strong>
             </p>
           </div>
-          <h2 className="text-center font-bold text-black xl:text-2xl lg:text-2xl md:text-2xl text-xl uppercase mt-10 mb-5">
-            mission
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum
-            culpa dolore mollitia in dolorum fuga id, at saepe quia et molestias
-            recusandae eaque repellat laboriosam corporis magni nobis vero?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum
-            culpa dolore mollitia in dolorum fuga id, at saepe quia et molestias
-            recusandae eaque repellat laboriosam corporis magni nobis vero?
-          </p>
-          <h2 className="text-center font-bold text-black xl:text-2xl lg:text-2xl md:text-2xl text-xl uppercase mt-10 mb-5">
-            Vission
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum
-            culpa dolore mollitia in dolorum fuga id, at saepe quia et molestias
-            recusandae eaque repellat laboriosam corporis magni nobis vero?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum
-            culpa dolore mollitia in dolorum fuga id, at saepe quia et molestias
-            recusandae eaque repellat laboriosam corporis magni nobis vero?
-          </p>
         </div>
       </div>
     </section>

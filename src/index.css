@@ -8,7 +8,9 @@
 body {
   /* font-family: 'Inter', sans-serif; */
   font-family: "Roboto", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: #555;
+  overflow-x: hidden;
 }
 .styled--head{
   font-family: 'Corinthia', cursive;
@@ -37,6 +39,8 @@ html{
 .nav--elements li:active {
   color: rgb(0, 162, 255);
   border-color: rgb(0, 162, 255);
+  /* color: #ffdf00; */
+  /* border-color: #ffdf00; */
 }
 .hamburger {
   display: none;
@@ -45,14 +49,16 @@ html{
   cursor: pointer;
 }
 header {
+  -webkit-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781)),
+    url(./../public/img/wedding2.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781)),
-    url(./../public/img/wallpaperflare.com_wallpaper-min.jpg);
+    url(./../public/img/wedding2.jpg);
   width: 100%;
   height: 90vh;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 .header--container {
   display: flex;
@@ -68,6 +74,7 @@ header {
   height: 2px;
   margin: 5px auto;
   background-color: rgb(0, 162, 255);
+  /* background-color: #ffdf00; */
   display: block;
 }
 .about--header--after {
@@ -102,6 +109,7 @@ filter: brightness(70%);
     column-count: 2;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .gallery {
     -webkit-column-count: 1;
@@ -120,6 +128,7 @@ filter: brightness(70%);
     top: 90%;
     right: 0;
     background-color: rgb(0, 162, 255);
+    /* background-color: #ffd700; */
     width: 100%;
     height: 100vh;
     padding-top: 5rem;
@@ -145,6 +154,12 @@ filter: brightness(70%);
   .filter--btn{
     margin-bottom: 10px;
   }
+  header{
+    background-size: cover;
+    background-position:initial;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
 }
 .gallery .pics {
   transition: all 0.3s ease-in;
@@ -166,4 +181,15 @@ textarea {
 }
 .contact--page--container{
   
+}
+.testimonial--image{
+  width: 100%;
+  height: 250px;
+}
+@media only screen and (min-width:678px){
+  .testimonial--image{
+    width: 100%;
+    height: 350px;
+  }
+
 }

@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="bg-white shadow-md z-50 py-5 sticky top-0">
       <div className="container flex justify-between items-center">
         <div className="logo">
-          <h3 className="font-bold text-xl ">Empson Photos</h3>
+          <h3 className="font-bold text-xl ">EmSon Photos</h3>
         </div>
         <button onClick={toggleNav} className="hamburger">
         &#9776;
@@ -24,7 +24,7 @@ function Navbar() {
             <Link to={'/about'}>About</Link>
           </li>
           <li onClick={toggleNav}>
-            <Link to={'/gallery'}>Galleries</Link>
+            <Link to={'/gallery'}>Gallery</Link>
           </li>
           <li onClick={toggleNav}>
             <Link to={'/packages/0/all'}>Services</Link>

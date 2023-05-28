@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <section className="mt-10 contact--section" id="contact">
-      <div className="container">
+      <div data-aos="zoom-in-left" data-aos-duration="1000" className="container">
         <h2 className="uppercase text-black font-bold xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-xl pb-6">Join the list</h2>
         <form action="">
             <input type="text" placeholder="Enter name" required />

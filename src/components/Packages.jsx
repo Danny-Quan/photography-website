@@ -8,48 +8,48 @@ function Packages() {
         <h2 className="styled--head capitalize text-black font-bold text-4xl">
           browse our packages
         </h2>
-        <div className="package--cards mt-5 grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+        <div data-aos="zoom-in" data-aos-duration="1000" className="package--cards mt-5 grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
           <Link
-            to={"/packages/1/weddings"}
+            to={"/packages/1/silver-package"}
             className="uppercase text-primary font-semibold spaced--text text-sm"
           >
             <div className="card">
-              <img src="./../img/wallpaperflare.com_wallpaper-min.jpg" alt="" />
+              <img src="./../img/package1.jpg" alt="" />
               <div className="text-center">
-                <button className="mt-3 uppercase">weddings</button>
+                <button className="mt-3 uppercase">Silver package</button>
               </div>
             </div>
           </Link>
           <Link
-            to={"/packages/2/family"}
+            to={"/packages/2/diamond-package"}
             className="uppercase text-primary font-semibold spaced--text text-sm"
           >
             <div className="card">
-              <img src="./../img/wallpaperflare.com_wallpaper-min.jpg" alt="" />
+              <img src="./../img/portriat2.jpeg" alt="" />
               <div className="text-center">
-                <button className="mt-3 uppercase">family</button>
+                <button className="mt-3 uppercase">Diamond package</button>
               </div>
             </div>
           </Link>
           <Link
-            to={"/packages/3/engagement"}
+            to={"/packages/3/gold-package"}
             className="uppercase text-primary font-semibold spaced--text text-sm"
           >
             <div className="card">
-              <img src="./../img/wallpaperflare.com_wallpaper-min.jpg" alt="" />
+              <img src="./../img/package3.jpg" alt="" />
               <div className="text-center">
-                <button className="mt-3 uppercase">engagement</button>
+                <button className="mt-3 uppercase">Gold package</button>
               </div>
             </div>
           </Link>
           <Link
-            to={"/packages/4/branding"}
+            to={"/packages/4/family-shoot"}
             className="uppercase text-primary font-semibold spaced--text text-sm"
           >
             <div className="card">
-              <img src="./../img/wallpaperflare.com_wallpaper-min.jpg" alt="" />
+              <img src="./../img/wedding2.jpg" alt="" />
               <div className="text-center">
-                <button className="mt-3 uppercase">branding</button>
+                <button className="mt-3 uppercase">Family shoot</button>
               </div>
             </div>
           </Link>

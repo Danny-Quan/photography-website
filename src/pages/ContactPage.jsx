@@ -11,22 +11,21 @@ function ContactPage() {
       <div className="container contact--page--container grid  xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
         <div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla,
-            animi unde minima, eaque aut ab exercitationem repellat excepturi
-            voluptatum odit modi, quasi veritatis odio consequuntur corporis
-            itaque dignissimos velit.
+          "Only Photography has been able to divide human life into series of
+          moments, each of them has a complete value of existence" &nbsp;{" "}
+          <strong>Eadweard Muybridge</strong>
           </p>
           <ul className="mt-10">
             <li className="mb-5">
-              <a href="tel:0545143000" className="flex gap-5 items-center"><FaPhone size={20} color={"dodgerblue"}/>+233 54 514 3000</a>
+              <a href="tel:+19782018477" className="flex gap-5 items-center"><FaPhone size={20} color={"dodgerblue"}/>+1 (978) 201-8477</a>
             </li>
-            <li className="mb-5">
+            {/* <li className="mb-5">
               <a href="tel:0241537297" className="flex gap-5 items-center"><FaPhone size={20} color={"dodgerblue"}/>+233 24 153 7297</a>
-            </li>
+            </li> */}
             <li className="mb-5">
-              <a href="mailto:companyname@gmail.com" className="flex gap-5 items-center"><BsFillEnvelopeOpenFill size={20} color={"dodgerblue"}  />companyname@gmail.com</a>
+              <a href="mailto:emson504@gmail.com" className="flex gap-5 items-center"><BsFillEnvelopeOpenFill size={20} color={"dodgerblue"}  />emson504@gmail.com</a>
             </li>
-            <li className="mb-2 flex gap-5 items-center" ><MdLocationOn size={30} color={"dodgerblue"} />Sunyani, Fiapre</li>
+            <li className="mb-2 flex gap-5 items-center" ><MdLocationOn size={30} color={"dodgerblue"} />United States, Massachussets</li>
           </ul>
         </div>
         <Contact />

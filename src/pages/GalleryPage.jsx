@@ -10,7 +10,7 @@ export default function GalleryPage() {
           <h2 className='font-bold text-black xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-xl text-center uppercase'>our Gallery</h2>
         <div className="gallery">
           {imageData.map((image) => (
-            <div className="pics" key={image.id}>
+            <div  className="pics" key={image.id}>
               <ModalImage
                 small={image.source}
                 large={image.source}

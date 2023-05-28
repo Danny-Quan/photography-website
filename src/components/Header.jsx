@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <div className="header--container ">
+      <div data-aos="fade-up" data-aos-duration="2000" className="header--container ">
         <div className="text-center">
           <h1 className="font-bold text-center text-white xl:text-6xl lg:text-5xl md:text-5xl text-4xl uppercase pb-5 px-3">
             wedding & lifestyle <br /> photographer
